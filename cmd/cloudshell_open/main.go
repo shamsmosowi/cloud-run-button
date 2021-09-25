@@ -79,6 +79,7 @@ func init() {
 	_ = flags.Bool(flForceNewClone, false, "ignored")
 }
 func main() {
+	fmt.Println("hello world!")
 	usage := flags.Usage
 	flags.Usage = func() {} // control when we print usage string
 	if err := flags.Parse(os.Args[1:]); err != nil {
